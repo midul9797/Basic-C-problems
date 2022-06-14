@@ -1,16 +1,12 @@
 #include<stdio.h>
 
 int main(){
-    int i,j,n, count=0;
+    int i,j,n, count;
 
     printf("Enter the Number of Rows = ");
     scanf("%d", &n);
 
-    for(i=1; i<=n; i++){
-        for(j=1;j<=i; j++){
-          count++;
-        }
-        }
+    count = n*(n+1)/2;
     for(i=n; i>=1; i--){
         for(j=1;j<=i; j++){
           printf("%d ", count);
